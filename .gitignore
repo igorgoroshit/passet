@@ -1,4 +1,7 @@
 /vendor
+/resources
+run.php
+.php-version
 composer.phar
 composer.lock
 .DS_Store
