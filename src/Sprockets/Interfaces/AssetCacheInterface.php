@@ -1,6 +1,10 @@
-<?php namespace Igorgoroshit\Sprockets\Interfaces;
+<?php
 
-interface AssetCacheInterface extends \Assetic\Asset\AssetInterface
+namespace Igorgoroshit\Sprockets\Interfaces;
+
+use Passet\Contracts\AssetInterface;
+
+interface AssetCacheInterface extends AssetInterface
 {
     /**
      * See if this asset is cached or not

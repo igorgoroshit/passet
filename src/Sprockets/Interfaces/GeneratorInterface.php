@@ -1,4 +1,6 @@
-<?php namespace Igorgoroshit\Sprockets\Interfaces;
+<?php
+
+namespace Igorgoroshit\Sprockets\Interfaces;
 
 interface GeneratorInterface
 {

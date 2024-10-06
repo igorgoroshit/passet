@@ -1,8 +1,8 @@
 <?php namespace Igorgoroshit\Pipeline\Filters;
 
 use DateTime;
-use Assetic\Asset\AssetInterface;
-use Assetic\Cache\CacheInterface;
+use Passet\Contracts\AssetInterface;
+use Passet\Contracts\CacheInterface;
 use Igorgoroshit\Sprockets\Interfaces\ClientCacheInterface;
 
 class ClientCacheFilter implements ClientCacheInterface

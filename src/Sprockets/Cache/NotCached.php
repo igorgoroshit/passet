@@ -1,4 +1,6 @@
-<?php namespace Igorgoroshit\Sprockets\Cache;
+<?php
+
+namespace Igorgoroshit\Sprockets\Cache;
 
 use Igorgoroshit\Sprockets\Interfaces\ClientCacheInterface;
 

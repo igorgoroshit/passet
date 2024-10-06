@@ -1,7 +1,9 @@
-<?php namespace Igorgoroshit\Sprockets\Filters;
+<?php
 
-use Assetic\Asset\AssetInterface;
-use Assetic\Filter\FilterInterface;
+namespace Igorgoroshit\Sprockets\Filters;
+
+use Passet\Contracts\AssetInterface;
+use Passet\Contracts\FilterInterface;
 
 class JavascriptConcatenationFilter implements FilterInterface
 {

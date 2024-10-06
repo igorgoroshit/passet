@@ -1,7 +1,9 @@
-<?php namespace Igorgoroshit\Pipeline\Filters;
+<?php
 
-use Assetic\Asset\AssetInterface;
-use Assetic\Filter\FilterInterface;
+namespace Igorgoroshit\Pipeline\Filters;
+
+use Passet\Contracts\AssetInterface;
+use Passet\Contracts\FilterInterface;
 use Assetic\Filter\BaseCssFilter;
 
 class FilterHelper extends BaseCssFilter

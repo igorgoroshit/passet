@@ -1,10 +1,10 @@
 <?php namespace Igorgoroshit\Sprockets\Cache;
 
 use Assetic\Asset\FileAsset;
-use Assetic\Asset\AssetInterface;
-use Assetic\Cache\CacheInterface;
-use Assetic\Filter\FilterInterface;
-use Assetic\Filter\HashableInterface;
+use Passet\Contracts\AssetInterface;
+use Passet\Contracts\CacheInterface;
+use Passet\Contracts\FilterInterface;
+use Passet\Contracts\HashableInterface;
 use Igorgoroshit\Sprockets\Interfaces\AssetCacheInterface;
 
 class AssetCache implements AssetCacheInterface

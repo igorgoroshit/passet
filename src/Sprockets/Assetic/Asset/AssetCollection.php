@@ -1,7 +1,9 @@
-<?php namespace Igorgoroshit\Sprockets\Assetic\Asset;
+<?php
 
-use Assetic\Asset\AssetInterface;
-use Assetic\Filter\FilterInterface;
+namespace Igorgoroshit\Sprockets\Assetic\Asset;
+
+use Passet\Contracts\AssetInterface;
+use Passet\Contracts\FilterInterface;
 use Assetic\Asset\AssetCollection as AsseticAssetCollection;
 
 use axy\sourcemap\SourceMap;

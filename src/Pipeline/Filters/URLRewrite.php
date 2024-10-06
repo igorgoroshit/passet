@@ -1,9 +1,12 @@
-<?php namespace Igorgoroshit\Pipeline\Filters;
+<?php
 
-use Assetic\Asset\AssetInterface;
-use Assetic\Filter\FilterInterface;
+namespace Igorgoroshit\Pipeline\Filters;
 
-class URLRewrite extends BaseCssFilter implements FilterInterface
+use Passet\Contracts\AssetInterface;
+use Passet\Contracts\FilterInterface;
+use Assetic\Filter\BaseCssFilter;
+
+class URLRewrite extends FilterHelper implements FilterInterface
 {
     private $baseurl = '/assets';
 

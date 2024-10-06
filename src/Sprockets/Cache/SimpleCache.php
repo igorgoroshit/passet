@@ -1,7 +1,9 @@
-<?php namespace Igorgoroshit\Sprockets\Cache;
+<?php
 
-use Assetic\Cache\CacheInterface;
-use Assetic\Filter\FilterInterface;
+namespace Igorgoroshit\Sprockets\Cache;
+
+use Passet\Contracts\AssetInterface;
+use Passet\Contracts\CacheInterface;
 
 class SimpleCache implements CacheInterface
 {

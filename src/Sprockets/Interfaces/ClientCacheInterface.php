@@ -1,6 +1,11 @@
-<?php namespace Igorgoroshit\Sprockets\Interfaces;
+<?php
 
-interface ClientCacheInterface extends \Assetic\Cache\CacheInterface
+namespace Igorgoroshit\Sprockets\Interfaces;
+
+use Passet\Contracts\CacheInterface;
+use Passet\Contracts\AssetInterface;
+
+interface ClientCacheInterface extends CacheInterface
 {
     /**
      * Allows us to get the existing cache
@@ -14,7 +19,7 @@ interface ClientCacheInterface extends \Assetic\Cache\CacheInterface
      *
      * @param CacheInterface $driver
      */
-    public function setServerCache(\Assetic\Cache\CacheInterface $driver);
+    public function setServerCache(CacheInterface $driver);
 
     /**
      * Allows us to know our parent asset cache so we can do stuff like
@@ -30,5 +35,5 @@ interface ClientCacheInterface extends \Assetic\Cache\CacheInterface
      *
      * @param AssetInterface $cache
      */
-    public function setAssetCache(\Assetic\Asset\AssetInterface $cache);
+    public function setAssetCache(AssetInterface $cache);
 }

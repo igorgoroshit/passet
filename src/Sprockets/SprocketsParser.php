@@ -1,4 +1,6 @@
-<?php namespace Igorgoroshit\Sprockets;
+<?php
+
+namespace Igorgoroshit\Sprockets;
 
 class SprocketsParser extends Parsers\ConfigParser implements Interfaces\ParserInterface
 {

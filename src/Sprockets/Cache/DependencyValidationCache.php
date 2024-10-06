@@ -1,7 +1,9 @@
-<?php namespace Igorgoroshit\Sprockets\Cache;
+<?php
 
-use Assetic\Cache\CacheInterface;
-use Assetic\Filter\FilterInterface;
+namespace Igorgoroshit\Sprockets\Cache;
+
+use Passet\Contracts\CacheInterface;
+use Passet\Contracts\FilterInterface;
 use Igorgoroshit\Sprockets\Parsers\DirectivesParser;
 
 class DependencyValidationCache implements CacheInterface
