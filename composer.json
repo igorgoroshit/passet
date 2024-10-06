@@ -1,0 +1,62 @@
+{
+    "name": "igorgoroshit/passet",
+    "type": "library",
+    "version": "7.3.1",
+    "authors": [
+
+        {
+            "name": "Kris Wallsmith",
+            "email": "kris.wallsmith@gmail.com",
+            "homepage": "http://kriswallsmith.net/"
+        },
+
+        {
+            "name": "Kelt Dockins",
+            "email": "kelt@codesleeve.com"
+        },
+
+        {
+            "name": "Igor Goroshit",
+            "email": "igor@webt.co.il"
+        }
+
+    ],
+
+    "require": {
+        "php":                  "~7.4|~8.0",
+        "illuminate/support":   "~7.0|~8.0",
+        "axy/sourcemap":        "0.1.5",
+        "ext-fileinfo":         "*"
+    },
+
+    "autoload": {
+
+        "psr-4": {
+            "Passet\\": "src",
+            "Assetic\\": "src/Assetic",
+            "Igorgoroshit\\Sprockets\\": "src/Sprockets",
+            "Igorgoroshit\\Pipeline\\": "src/Pipeline"
+        }
+
+    },
+    
+    "extra": {
+
+        "branch-alias": {
+            
+        },
+
+        "laravel": {
+            "providers": [
+                "Laravel\\Telescope\\TelescopeServiceProvider"
+            ]
+        }
+    },
+
+     "config": {
+        "sort-packages": true
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
