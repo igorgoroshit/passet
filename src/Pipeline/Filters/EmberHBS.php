@@ -69,6 +69,12 @@ class EmberHBS extends FilterHelper implements FilterInterface
                 $template_name = "{$template_path}";                
              }
 
+             //[js]/APPNAME/pages
+             else if($parts[2] == 'pages') {
+                $parts = array_slice($parts, 3);
+                $template_path = implode('/', $parts);
+                $template_name = "{$template_path}";
+             }
         }
         //APPNAME/components/[component]/template
         else if (count($parts) > 2 && $parts[1] == 'components') {
@@ -77,6 +83,11 @@ class EmberHBS extends FilterHelper implements FilterInterface
             $template_name = "{$template_path}/$template_file";
         }
         else if (count($parts) > 2 && $parts[1] == 'routes') {
+            $parts = array_slice($parts, 1);
+            $template_path = implode('/', $parts);
+            $template_name = "{$template_path}/$template_file";
+        }
+        else if (count($parts) > 2 && $parts[1] == 'pages') {
             $parts = array_slice($parts, 1);
             $template_path = implode('/', $parts);
             $template_name = "{$template_path}/$template_file";
