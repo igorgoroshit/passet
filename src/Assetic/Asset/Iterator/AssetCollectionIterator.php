@@ -56,7 +56,7 @@ class AssetCollectionIterator implements RecursiveIterator
      *
      * @return \Assetic\Asset\AssetInterface
      */
-    public function current($raw = false)
+    public function current($raw = false) : mixed
     {
         $asset = current($this->assets);
 
@@ -86,7 +86,7 @@ class AssetCollectionIterator implements RecursiveIterator
         return $clone;
     }
 
-    public function key()
+    public function key() : mixed
     {
         return key($this->assets);
     }
